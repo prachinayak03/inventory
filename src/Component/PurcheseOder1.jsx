@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import { IoAddCircle } from 'react-icons/io5';
 import { MdDelete } from 'react-icons/md';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
@@ -218,7 +217,7 @@ const formatDate = (dateString) => {
           <div className="justify-content-between row add">
             <div className='col-md-6'>
                <button className={`btn btn-secondary add ${isGeneratingPDF ? 'd-none' : ''}`} onClick={addItem}>
-              <IoAddCircle /> Add Line Item
+              Add Line Item
             </button>
             </div>
            
