@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+
+.Download button{
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 10px 20px 10px 20px;
+  display: inline;
+}
+.header h5{
+  padding-left:50px !important;
+}
+.header h1{
+  margin: 0;
+  display: inline;
+  }
+  .header hr{
+    border: 2px solid #666;
+  }
+.form-control{
+  text-decoration: none;
+}
+.p-heading{
+  text-align: center;
+   color:#b73f3f;
+}
+.address p{
+  margin-bottom: 0;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 1.25rem;
+}
+/*  */
+.box{
+  width: 40% !important;
+  
+}
+.hd td {
+border-bottom: 1 solid #ddd;
+background-color: #666 !important;
+color: rgba(240, 248, 255, 0.956) !important;
+font-weight: bold;
+}
+.column td {
+  padding: 4px 8px;
+  vertical-align: top;
+}
+#col{
+  margin: 0px 0px 10px 0px;
+  padding: 0px 25px 25px 25px;
+  border-radius: 15px;
+
+}
+#col span{
+  text-align: left !important;
+}
+#col input , .tarea textarea {
+  border-bottom: 1px solid #6f6a6a;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  background-color:white;
+  font-size:18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+ .totals p{
+  padding: 5px;
+} 
+
+#tot{
+  background: #dcd8d8;
+  padding: 10px;
+  border-top: 1px solid #c7c7c7;
+  font-size: 18px;
+  font-weight: bolder ;
+}
+#tot span{
+  padding-left:47%;
+}
+#subtotal{
+  padding-left: 44%;
+}
+.totals span{ 
+  padding-left: 33%;
+}
+#tax{
+  padding-left: 30%;
+}
+#amount{
+padding-top:30px;
+font-size: 18px;
+}
+.totals strong , .totals span{
+  font-size: 18px;
+}
+.add {
+  margin-left: 0px;
+  margin-top: 10px;
+  font-weight: bolder !important;
+  font-size: 15px !important;
+}
+
+.note{
+  overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 45.6px;
+  width: 100%;
+    min-height: 22px;
+    margin-top: 2px;
+}
+.terms input , .terms textarea{
+     margin-top: 20px; 
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px !important;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;   
+}
+
