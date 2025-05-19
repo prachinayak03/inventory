@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import { MdDelete } from 'react-icons/md';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
@@ -206,7 +205,7 @@ const formatDate = (dateString) => {
                         setItems(updated);
                       }}
                     >
-                      <MdDelete />
+                     del
                     </button>
                   </td>
                 </tr>
