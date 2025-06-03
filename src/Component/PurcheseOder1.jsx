@@ -92,7 +92,10 @@ const formatDate = (dateString) => {
               <div className="col-md-6 box" id='col'>
                 <h2 className={`${isGeneratingPDF ? 'd-none' : ''}`}>Vendor Detail</h2>
                 <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`} 
-                style={isGeneratingPDF ? {fontSize:'20px'}:{}} placeholder="Company Name" />
+                 style={{
+                    fontSize: isGeneratingPDF ? '20px' : '',
+                    fontWeight: isGeneratingPDF ? 'bold' : '',
+                  }}  placeholder="Company Name" />
                 <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`} 
                 style={isGeneratingPDF ? {fontSize:'20px'}:{}} placeholder="Company Address" />
                 <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`} 
@@ -114,7 +117,7 @@ const formatDate = (dateString) => {
 
                {isGeneratingPDF ? (
                <div className='mb-2'>
-                 <p ><strong style={isGeneratingPDF ? {fontSize:'20px'}:{}} >Order Date:</strong></p>
+                 <p><strong style={isGeneratingPDF ? {fontSize:'20px'}:{}} >Order Date:</strong></p>
                  <p style={isGeneratingPDF ? {fontSize:'20px'}:{}}>{formatDate(orderDate)}</p>
                  <p ><strong style={isGeneratingPDF ? {fontSize:'20px'}:{}}>Delivery Date:</strong></p>
                  <p style={isGeneratingPDF ? {fontSize:'20px'}:{}}>{formatDate(deliveryDate)}</p>
