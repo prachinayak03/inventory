@@ -90,7 +90,7 @@ const formatDate = (dateString) => {
               </div>
 
               <div className="col-md-6 box" id='col'>
-                <h2>Vendor Detail</h2>
+                <h2 className={`${isGeneratingPDF ? 'd-none' : ''}`}>Vendor Detail</h2>
                 <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`} 
                 style={isGeneratingPDF ? {fontSize:'20px'}:{}} placeholder="Company Name" />
                 <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`} 
@@ -105,7 +105,7 @@ const formatDate = (dateString) => {
 
           
               <div className="col-md-6 box" style={{ position: "relative", left: "15%" }} id="col">
-                  <h2>PO Detail</h2>
+                  <h2 className={`${isGeneratingPDF ? 'd-none' : ''}`}>PO Detail</h2>
               <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
               style={{
                     fontSize: isGeneratingPDF ? '20px' : '',
