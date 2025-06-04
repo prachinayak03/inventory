@@ -113,7 +113,7 @@ const formatDate = (dateString) => {
               style={{
                     fontSize: isGeneratingPDF ? '20px' : '',
                     paddingLeft: isGeneratingPDF ? '0' : '',
-                  }} <stong>PO #</stong>/>
+                  }}placeholder="PO #"/>
 
                {isGeneratingPDF ? (
                <div className='mb-2'>
