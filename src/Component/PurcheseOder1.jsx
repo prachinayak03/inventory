@@ -109,30 +109,11 @@ const formatDate = (dateString) => {
           
               <div className="col-md-6 box" style={{ position: "relative", left: "15%" }} id="col">
                   <h2 className={`${isGeneratingPDF ? 'd-none' : ''}`}>PO Detail</h2>
-
-                  {isGeneratingPDF ? (
-                  // Show bold PO # text when generating PDF
-              <div className="form-control mb-2" style={{ fontWeight: 'bold', fontSize: '20px' , border:'none' }}>
-                PO#
-                 <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
-            style={{
-              fontSize: isGeneratingPDF ? '20px' : '',
-              paddingLeft: isGeneratingPDF ? '0' : '',
-            }}
-            placeholder="PO #"
-          />
-              </div>
-      
-            ) : (
-            <input
-            className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
-            style={{
-              fontSize: isGeneratingPDF ? '20px' : '',
-              paddingLeft: isGeneratingPDF ? '0' : '',
-            }}
-            placeholder="PO #"
-          />
-          )}
+             <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
+              style ={{
+                    fontSize: isGeneratingPDF ? '20px' : '',
+                    paddingLeft: isGeneratingPDF ? '0' : '',
+                  }} placeholder="PO #"/>
 
                {isGeneratingPDF ? (
                <div className='mb-2'>
