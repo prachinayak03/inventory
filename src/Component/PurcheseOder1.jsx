@@ -18,6 +18,8 @@ const [terms, setTerms] = useState("Upon accepting this purchase order, you here
 const [orderDate, setOrderDate] = useState('');
 const [deliveryDate, setDeliveryDate] = useState('');
 // Editable date 
+  const [poNumber, setPoNumber] = useState('');
+  // po .....//
 const formatDate = (dateString) => {
   if (!dateString) return '';
   const options = { day: '2-digit', month: 'long', year: 'numeric' };
@@ -109,11 +111,24 @@ const formatDate = (dateString) => {
           
               <div className="col-md-6 box" style={{ position: "relative", left: "15%" }} id="col">
                   <h2 className={`${isGeneratingPDF ? 'd-none' : ''}`}>PO Detail</h2>
-             <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
+{/*              <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
               style ={{
                     fontSize: isGeneratingPDF ? '20px' : '',
                     paddingLeft: isGeneratingPDF ? '0' : '',
-                  }} placeholder="PO #"/>
+                  }} placeholder="PO #"/> */}
+                {isGeneratingPDF ? (
+  <p style={{ fontSize: '20px' }}>
+    <strong>PO #:</strong> {poNumber || 'Not Provided'}
+  </p>
+) : (
+  <input
+    type="text"
+    value={poNumber}
+    onChange={(e) => setPoNumber(e.target.value)}
+    className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
+    placeholder="PO #"
+  />
+)}
 
                {isGeneratingPDF ? (
                <div className='mb-2'>
