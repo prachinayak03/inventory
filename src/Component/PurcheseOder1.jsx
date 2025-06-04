@@ -113,12 +113,15 @@ const formatDate = (dateString) => {
               style={{
                     fontSize: isGeneratingPDF ? '20px' : '',
                     paddingLeft: isGeneratingPDF ? '0' : '',
-                  }} placeholder="PO #"/>
+                  }} <stong>PO #</stong>/>
 
                {isGeneratingPDF ? (
                <div className='mb-2'>
                  <p><strong style={isGeneratingPDF ? {fontSize:'20px'}:{}} >Order Date:</strong></p>
-                 <p style={isGeneratingPDF ? {fontSize:'20px'}:{}}>{formatDate(orderDate)}</p>
+                 <p style={{
+                    fontSize: isGeneratingPDF ? '20px' : '',
+                    display: isGeneratingPDF ? 'inline' : '',
+                  }} >{formatDate(orderDate)}</p>
                  <p ><strong style={isGeneratingPDF ? {fontSize:'20px'}:{}}>Delivery Date:</strong></p>
                  <p style={isGeneratingPDF ? {fontSize:'20px'}:{}}>{formatDate(deliveryDate)}</p>
                </div>
@@ -253,7 +256,7 @@ const formatDate = (dateString) => {
           </div>
           ) : (
           <textarea
-      className="form-control w-50 mt-3"
+      className="form-control  mt-3"
       value={note}
       onChange={(e) => setNote(e.target.value)}
     />
