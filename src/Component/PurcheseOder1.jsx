@@ -114,7 +114,15 @@ const formatDate = (dateString) => {
                   // Show bold PO # text when generating PDF
               <div className="form-control mb-2" style={{ fontWeight: 'bold', fontSize: '20px' , border:'none' }}>
                 PO#
+                 <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
+            style={{
+              fontSize: isGeneratingPDF ? '20px' : '',
+              paddingLeft: isGeneratingPDF ? '0' : '',
+            }}
+            placeholder="PO #"
+          />
               </div>
+      
             ) : (
             <input
             className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
