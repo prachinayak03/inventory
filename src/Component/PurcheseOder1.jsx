@@ -111,11 +111,7 @@ const formatDate = (dateString) => {
           
               <div className="col-md-6 box" style={{ position: "relative", left: "15%" }} id="col">
                   <h2 className={`${isGeneratingPDF ? 'd-none' : ''}`}>PO Detail</h2>
-{/*              <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
-              style ={{
-                    fontSize: isGeneratingPDF ? '20px' : '',
-                    paddingLeft: isGeneratingPDF ? '0' : '',
-                  }} placeholder="PO #"/> */}
+
                 {isGeneratingPDF ? (
                 <p style={{ fontSize: '20px' }}>
                 <strong>PO #:</strong> {poNumber || 'Not Provided'}
@@ -126,15 +122,6 @@ const formatDate = (dateString) => {
                   placeholder="PO #"
                   />
 )}
-
-{/*                {isGeneratingPDF ? (
-               <div className='mb-2'>
-                 <p><strong style={isGeneratingPDF ? {fontSize:'20px'}:{}} >Order Date:</strong></p>
-                 <p style={isGeneratingPDF ? {fontSize:'20px'}:{}}>{formatDate(orderDate)}</p>
-                 <p><strong style={isGeneratingPDF ? {fontSize:'20px'}:{}}>Delivery Date:</strong></p>
-                 <p style={isGeneratingPDF ? {fontSize:'20px'}:{}}>{formatDate(deliveryDate)}</p>
-               </div>
-             ) : ( */}
                  {isGeneratingPDF ? (
                     <div className='mb-2'>
                      <p style={{ fontSize: '20px' }}><strong>Order Date: </strong>{formatDate(orderDate)}</p>
@@ -147,7 +134,7 @@ const formatDate = (dateString) => {
                   type="date"
                   value={orderDate}
                   onChange={(e) => setOrderDate(e.target.value)}
-                 className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}
+                 className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : '' , "padding-left":50px}`}
                  style={isGeneratingPDF ? {fontSize:'20px'}:{}}
                 />
 
