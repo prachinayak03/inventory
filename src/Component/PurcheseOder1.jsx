@@ -113,7 +113,7 @@ const formatDate = (dateString) => {
                   <h2 className={`${isGeneratingPDF ? 'd-none' : ''}`}>PO Detail</h2>
 
                 {isGeneratingPDF ? (
-                <p style={{ fontSize: '20px' ,paddingLeft: '20px'}}>
+                <p style={{ fontSize: '20px'}}>
                 <strong>PO #:</strong> {poNumber || 'Not Provided'}
                 </p>
                 ) : (
@@ -124,8 +124,8 @@ const formatDate = (dateString) => {
 )}
                  {isGeneratingPDF ? (
                     <div className='mb-2'>
-                     <p style={{ fontSize: '20px' , MarginLeft: '50px'}}><strong>Order Date: </strong>{formatDate(orderDate)}</p>
-                     <p style={{ fontSize: '20px' , MarginLeft: '50px'}}><strong>Delivery Date: </strong>{formatDate(deliveryDate)}</p>
+                     <p style={{ fontSize: '20px'}}><strong>Order Date: </strong>{formatDate(orderDate)}</p>
+                     <p style={{ fontSize: '20px'}}><strong>Delivery Date: </strong>{formatDate(deliveryDate)}</p>
                 </div>
               ) : (
             <>
