@@ -124,8 +124,8 @@ const formatDate = (dateString) => {
 )}
                  {isGeneratingPDF ? (
                     <div className='mb-2'>
-                     <p style={{ fontSize: '20px' , paddingRight: '50px'}}><strong>Order Date: </strong>{formatDate(orderDate)}</p>
-                     <p style={{ fontSize: '20px' , paddingLeft: '20px'}}><strong>Delivery Date: </strong>{formatDate(deliveryDate)}</p>
+                     <p style={{ fontSize: '20px' , MarginLeft: '50px'}}><strong>Order Date: </strong>{formatDate(orderDate)}</p>
+                     <p style={{ fontSize: '20px' , MarginLeft: '50px'}}><strong>Delivery Date: </strong>{formatDate(deliveryDate)}</p>
                 </div>
               ) : (
             <>
