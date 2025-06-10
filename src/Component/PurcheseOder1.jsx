@@ -134,7 +134,7 @@ const formatDate = (dateString) => {
                   type="date"
                   value={orderDate}
                   onChange={(e) => setOrderDate(e.target.value)}
-                 className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : '' , "padding-left":50px}`}
+                 className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : '' , "padding-left":'50px'}`}
                  style={isGeneratingPDF ? {fontSize:'20px'}:{}}
                 />
 
