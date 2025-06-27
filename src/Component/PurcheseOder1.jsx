@@ -114,14 +114,13 @@ const formatDate = (dateString) => {
                     paddingLeft: isGeneratingPDF ? '0' : '',
                   }} placeholder="PO #"/>
 
-               {isGeneratingPDF ? (
-               <div className='mb-2'>
-                 <p ><strong style={isGeneratingPDF ? {fontSize:'20px'}:{}} >Order Date:</strong></p>
-                 <p style={isGeneratingPDF ? {fontSize:'20px'}:{}}>{formatDate(orderDate)}</p>
-                 <p ><strong style={isGeneratingPDF ? {fontSize:'20px'}:{}}>Delivery Date:</strong></p>
-                 <p style={isGeneratingPDF ? {fontSize:'20px'}:{}}>{formatDate(deliveryDate)}</p>
-               </div>
-             ) : (
+             {isGeneratingPDF ? (
+                    <div className='mb-2'>
+                     <p style={{ fontSize: '20px' , marginLeft:'50px' }}><strong>Order Date: </strong>{formatDate(orderDate)}</p>
+                     <p style={{ fontSize: '20px' }}><strong>Delivery Date: </strong>{formatDate(deliveryDate)}</p>
+                </div>
+              ) : (
+
             <>
                  <label style={isGeneratingPDF ? {fontSize:'25px'}:{}}>Order Date</label>
                 <input
