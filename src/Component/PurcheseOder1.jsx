@@ -267,7 +267,7 @@ const formatDate = (dateString) => {
   <input type='text' className='form-control w-50' placeholder='Terms & Condition' disabled={isGeneratingPDF} />
 
   {isGeneratingPDF ? (
-    <div className='form-control w-50 border-0' style={{ whiteSpace: 'pre-wrap' , fontSize:'20px'}}>
+    <div className='form-control w-50 border-0' style={{ whiteSpace: 'pre-wrap' , fontSize:'20px' , fontWeight:'bold'}}>
       {terms}
     </div>
   ) : (
