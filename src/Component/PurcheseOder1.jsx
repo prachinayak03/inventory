@@ -80,7 +80,7 @@ const formatDate = (dateString) => {
             <div className="row">
               <div className="col-md-12 w-100 box" id='col'>
                 <h2 className={`${isGeneratingPDF ? 'd-none' : ''}`}> Company Detail</h2>
-                <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}  placeholder="Enter your Name" 
+                <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`}  placeholder="Enter your company name " 
                 style={isGeneratingPDF ? {fontSize:'20px'}:{}}/>
                 <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`} 
                 style={isGeneratingPDF ? {fontSize:'20px'}:{}}
