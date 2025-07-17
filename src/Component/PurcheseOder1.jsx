@@ -98,13 +98,13 @@ const formatDate = (dateString) => {
                     fontSize: isGeneratingPDF ? '20px' : '',
                     fontWeight: isGeneratingPDF ? 'bold' : '',
                   }}  placeholder="Company Name" />
-                <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`} 
+                <input className={`form-control  ${isGeneratingPDF ? 'border-0' : ''}`} 
                 style={isGeneratingPDF ? {fontSize:'20px'}:{}} placeholder="Company Address" />
-                <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`} 
+                <input className={`form-control  ${isGeneratingPDF ? 'border-0' : ''}`} 
                 style={isGeneratingPDF ? {fontSize:'20px'}:{}} placeholder="City, State, ZIP" />
-                <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`} 
+                <input className={`form-control  ${isGeneratingPDF ? 'border-0' : ''}`} 
                 style={isGeneratingPDF ? {fontSize:'20px'}:{}} placeholder="Country" />
-                 <input className={`form-control mb-2 ${isGeneratingPDF ? 'border-0' : ''}`} 
+                 <input className={`form-control  ${isGeneratingPDF ? 'border-0' : ''}`} 
                  style={isGeneratingPDF ? {fontSize:'20px'}:{}} placeholder="GST No." />
               </div>
 
